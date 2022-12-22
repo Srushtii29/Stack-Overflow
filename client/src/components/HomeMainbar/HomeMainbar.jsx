@@ -63,7 +63,7 @@ const HomeMainbar = () => {
     // }]
 
     const location = useLocation()
-    const User = 1;
+    const User = useSelector((state) => (state.currentUserReducer));
     const navigate = useNavigate()
     
     const questionsList = useSelector(state => state.questionsReducer)
