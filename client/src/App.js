@@ -6,6 +6,7 @@ import AllRoutes from "./AllRoutes";
 import { useEffect } from "react";
 import { fetchAllQuestions } from "./actions/question";
 import { fetchAllUsers } from './actions/users'
+import KommunicateChat from "./chat";
 
 function App() {
   const dispatch = useDispatch();
@@ -16,6 +17,7 @@ function App() {
   }, [dispatch]);
   return (
     <div className="App">
+      <KommunicateChat />
       <Router>
         <Navbar />
         <AllRoutes />

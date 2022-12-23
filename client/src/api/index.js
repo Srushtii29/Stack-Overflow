@@ -1,4 +1,5 @@
 import axios from 'axios'
+//import Kommunicate from '@kommunicate/kommunicate-chatbot-plugin'
 
 const API = axios.create({ baseURL: 'https://stack-overflow-78ld.onrender.com'})
 
@@ -8,6 +9,8 @@ API.interceptors.request.use((req) => {
     }
     return req;
 })
+
+//Kommunicate.init("49532ba1042064d475ced65d2c0e42b0" ,"popupWidget:true, automaticChatOpenOnNavigation:true")
 
 export const logIn = (authData) => API.post('/user/login', authData);
 export const signUp = (authData) => API.post('/user/signup', authData);

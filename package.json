@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@kommunicate/kommunicate-chatbot-plugin": "^0.0.5",
+    "react-responsive": "^9.0.2"
+  }
+}
