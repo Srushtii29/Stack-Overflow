@@ -22,3 +22,11 @@
 .user-profile-link h5{
     margin: 0px 10px;
 }
+
+@media only screen and (max-width: 720px) {
+    .home-container-2{
+        overflow-x: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

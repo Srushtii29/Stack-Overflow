@@ -1,5 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import { useDispatch } from "react-redux";
+
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import AllRoutes from "./AllRoutes";
@@ -10,7 +11,6 @@ import KommunicateChat from "./chat";
 
 function App() {
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(fetchAllQuestions())
     dispatch(fetchAllUsers())
@@ -27,3 +27,4 @@ function App() {
 }
 
 export default App;
+

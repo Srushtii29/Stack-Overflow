@@ -71,7 +71,7 @@ const QuestionsDetails = () => {
     const dispatch = useDispatch()
     const User = useSelector((state) => (state.currentUserReducer))
     const location = useLocation()
-    const url = 'https://stack-overflow-78ld.onrender.com'
+    const url = 'https://stack-overflow-clone-ss.netlify.app'
 
     const handlePostAns = (e, answerLength) =>{
         e.preventDefault()

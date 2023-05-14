@@ -66,3 +66,20 @@
     color: #39739d;
     border-radius: 2px;
 }
+
+@media (max-width: 576px) {
+}
+@media (max-width: 768px) {
+  .right-sidebar {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .right-sidebar {
+    width: 250px;
+  }
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1400px) {
+}
